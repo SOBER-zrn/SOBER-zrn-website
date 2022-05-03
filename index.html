@@ -1,0 +1,192 @@
+  <style>
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #36d0f7, #7feb26);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .cta {
+ border: none;
+ background: none;
+}
+
+.cta span {
+ padding-bottom: 7px;
+ letter-spacing: 4px;
+ font-size: 10px;
+ padding-right: 15px;
+ text-transform: uppercase;
+}
+
+.cta svg {
+ transform: translateX(-8px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active svg {
+ transform: scale(0.9);
+}
+
+.hover-underline-animation {
+ position: relative;
+ color: black;
+ padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+ content: "";
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 1.5px;
+ bottom: 0;
+ left: 0;
+ background-color: #000000;
+ transform-origin: bottom right;
+ transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+ transform: scaleX(1);
+ transform-origin: bottom left;
+}
+ 
+/* KAPIAN */
+/* From uiverse.io by @alexruix */
+/*Magic card*/
+.card {
+ width: 190px;
+ height: 254px;
+ background: #f5f5f5;
+ overflow: visible;
+ box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: auto;
+ margin-top: 100px;
+}
+
+.card-info {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 2em;
+ padding: 0 1rem;
+}
+
+.card-img {
+ --size: 100px;
+ width: var(--size);
+ height: var(--size);
+ border-radius: 50%;
+ transform: translateY(-50%);
+ 
+ background-color: #36d0f7;
+ position: relative;
+ transition: all .3s ease-in-out;
+}
+
+.card-img::before {
+ content: "";
+ border-radius: inherit;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 90%;
+ height: 90%;
+ transform: translate(-50%, -50%);
+ border: 1rem solid #f0f3f5;
+}
+
+/*Text*/
+.text-title {
+ text-transform: uppercase;
+ font-size: 0.75em;
+ color: #42caff;
+ letter-spacing: 0.05rem;
+}
+
+.text-body {
+ font-size: .8em;
+ text-align: center;
+ color: #6f6d78;
+ font-weight: 400;
+ font-style: italic;
+}
+
+/*Hover*/
+.card:hover .card-img {
+ --size: 110px;
+ width: var(--size);
+ height: var(--size);
+}
+  </style>
+  <body>
+       <body style="margin=0;">
+    <div style="text-align: center; padding-top: 40px">
+      <img alt="sober" src="./sober头像.png" width="100px" height="100px" />
+      <div>
+         <h1 style="color: rgb(58, 58, 56);">SOBER</h1> 
+         <h1 style="font-size: 30px; color: rgb(0, 0, 0);">欢迎来到SOBER的个人网站</h1>
+      </div>
+    </div>
+   
+     <article
+      style="
+        max-width: 760px;
+        margin:auto;
+
+        padding: 0px;
+        color: rgb(38, 39, 41);
+        font-size: 17px;
+        line-height: 1.7;
+        text-size-adjust: 100%;
+      "
+     
+    >
+    <!-- ZHENGWEN -->
+
+    <p ><b>Hi! my name is Sober!</b></p>
+    <p ><b>hello word !我是本网站的作者SOBER</b></p>
+    <p ><b>目前这个网站正在测试中</b></p>
+    <button class="cta">
+  <span class="hover-underline-animation"> <b style="font-size: large;">欢迎沟通交流请＋qq</b> </span>
+  <svg id="" xmlns="" width="30" height="20" viewBox="0 0 46 16">
+    <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+  </svg>
+  <b style="font-size: large;">3338209204</b>
+</button>
+
+
+     </article>
+    
+     <div class="card">
+<div class="card-img">
+    <img alt="sober" src="./sober头像.png" width="105px" height="105px" />
+</div>
+  <div class="card-info">
+    <p class="text-body">Welcome to Sober's website ! Anyone is welcome to visit for my suggestions
+    </p>
+    <p class="text-title">SOBER</p>
+  </div>
+</div>
+     
+  </body>
+</html>
