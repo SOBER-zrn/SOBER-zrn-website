@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOBER-NYLOGIN</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+    }
+    input {
+      width: 200px;
+      height: 40px;
+    }
+    center {
+      margin-top: 200px;
+    }
+    #ok {
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <center>
+      <input id="pwd" type="text" placeholder="请输入用户名" />
+      <br />
+      <input id="ok" onclick="ok();" type="button" value="确定" />
+    </center>
+    <script>
+      function ok() {
+        let pwd = document.getElementById("pwd").value;
+        if (pwd == "123456") {
+          alert("欢迎你程清玉！");
+          response.sendRedirent("newyearindex.html");
+        } else {
+          alert("用户错误");
+        }
+      }
+    </script>
+  </body>
+</html>

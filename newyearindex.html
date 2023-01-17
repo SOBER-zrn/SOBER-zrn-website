@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewYear'sGiftForCQY</title>
+    <style>
+      .beijing {
+        background-image: url("background.jpg");
+      }
+      .headname {
+        font-size: 30px;
+        height: 10px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        margin: 40px;
+        text-align: center;
+        color: aliceblue;
+      }
+      .txt {
+        font-size: 25px;
+        height: 0px;
+        padding-left: 3px;
+        margin-left: 15px;
+        color: aliceblue;
+      }
+      .lastSOBER {
+        font: size 1px;
+        height: 10px;
+        text-alian: center;
+        padding: 25px;
+        color: aliceblue;
+      }
+      /* firework */
+      html body {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+      }
+
+      #container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+      }
+
+      #fireworks {
+        transform: scale(0);
+        /* 参数：name、duration、delay */
+        animation: fireworks 3s 2s infinite;
+      }
+
+      @keyframes fireworks {
+        0% {
+          transform: scale(0);
+        }
+
+        80% {
+          transform: scale(1);
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #firecracker {
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        margin-left: -4px;
+        animation: firecracker 3s infinite;
+      }
+
+      @keyframes firecracker {
+        0% {
+          transform: scale(1);
+          bottom: 0%;
+        }
+
+        100% {
+          bottom: 60%;
+          transform: scale(0);
+        }
+      }
+    </style>
+  </head>
+  <body
+    id="v1"
+    class="body"
+    style="background-image: url('background.jp'); background-color: black"
+  >
+    <div style="text-align: center; padding-top: 30px; padding-bottom: 0px">
+      <img src="TXcqy002.jpg.png" alt="CQY" width="80px" height="80px" />
+      <h1 id="v3" class="headname">TO CQY</h1>
+    </div>
+
+    <div id="v4" class="txt;beijing">
+      <p id="v5" class="txt;"></p>
+      <p id="v6" class="txt">hi，程清玉:</p>
+      <p id="v7" class="txt">新年到啦！这是一封祝福。</p>
+      <p id="v8" class="txt">时光荏苒，没想到我们的友</p>
+      <p id="v9" class="txt">谊持续了一年又一年，希望</p>
+      <p id="v10" class="txt">今年会越来越好，不用经历</p>
+      <p id="v11" class="txt">疾病，考试能够顺利，心里</p>
+      <p id="v12" class="txt">牵挂的人也能交给时间一个</p>
+      <p id="v13" class="txt">最好的答案。</p>
+      <p id="v14" class="txt">“欲买桂花同载酒，终不似</p>
+      <p id="v15" class="txt">少年游”</p>
+      <p id="v16" class="txt">在短暂的生命里，就该无尽</p>
+      <p id="v17" class="txt">的热爱，不要emo噢，要相</p>
+      <p id="v18" class="txt">信努力的日子都是程子味的</p>
+      <p id="v19" class="txt">就算有什么不愉快的，也别</p>
+      <p id="v20" class="txt">憋在心里，好朋友永远陪在</p>
+      <p id="v21" class="txt">你身边！</p>
+      <p id="v22" class="txt">最后，感谢今年有你陪伴，</p>
+      <p id="v23" class="txt">也希望年年有你陪伴！</p>
+      <p id="v24" class="txt">新年快乐！</p>
+    </div>
+    <div id="container">
+      <div id="fireworks"><img src="imgs/fireworks.png" alt="" /></div>
+      <div id="firecracker">
+        <img src="imgs/firecracker.png" alt="" width="8px" />
+      </div>
+    </div>
+    <div><p id="v25" class="lastSOBER">wirtten by SOBER</p></div>
+  </body>
+</html>
