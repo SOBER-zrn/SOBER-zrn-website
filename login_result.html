@@ -14,7 +14,7 @@ contenType="text/html;charst=utf-8"pageEncoding="utf-8"%>
     pass=request.getParameter("pass");
     <!-- 登录验证 -->
     if(id.equals("123") &&pass.equals("1234")){
-    response.sendRedirent("login1.jsp"); } else{ %>
+    response.sendRedirent("login1.html"); } else{ %>
     <jsp:forward page="login2.html"></jsp:forward>
     <% } %>
   </body>
